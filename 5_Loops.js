@@ -55,7 +55,7 @@
 //     if(i===32) {
 //         break;      //jaise hi i ki value 32 ho jaye loop ko break kar do matlab iske aage loop nahi chalegi
 //     }
-// }
+// },
 
 //continue//
 for(let i =1; i<101; i++){
@@ -64,4 +64,13 @@ for(let i =1; i<101; i++){
     }
     console.log(i);
 }
+
+//
+//
+///
+//
+//
+
+`` - backticks,template literals, template strings 
+`my age is ${12+2}`  //this will give my age is 14 because in backticks ${} refers to dynamic value means we have to solve and present the answer
 

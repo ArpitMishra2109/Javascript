@@ -13,7 +13,8 @@ ex.)  function abcd(){
              var a = 12;
         }
 }
-kisi aur language mein agar if mein var create kiya hota toh woh sirfif mein use hota but js mein yeh function scoped h isliye pure function mein kahi bhi use ho sakta h
+kisi aur language mein agar if mein var create kiya hota toh woh sirf 
+if mein use hota but js mein yeh function scoped h isliye pure function mein kahi bhi use ho sakta h
 // var ko aap same name se firse declare kar sakte ho aur error nahi aayega(but yeh ek galat chiz h ki ek naam ke 2 value h toh error hona chahiye isliye hum let use karte h kyuki iske
 liye let mein error aa jata)
   var a = 12;
@@ -35,7 +36,7 @@ var a;---declaration(variable banaya but value nahi di)
 var a = 12;---declare and initialize(variable banaya aur first value di,initialization matlab first value dena )
 
                                                          // scope(global, block, functional) //
-scope--humne variable banaya toh yeh variable kaha tak use ho sakta husse scope kehte h
+scope--humne variable banaya toh yeh variable kaha tak use ho sakta h usse scope kehte h
 agra humne directly ek variable banaya toh yeh pure code mein use ho sakta h but agar humne variable ko maanlo ek function mein banaya toh woh sirf function mein use ho payega
 1.global scope variable--aisa variable jo kisi bhi curly braces ke andar nahi h(global matlab pure code mein kahi bhi use ho sakta h)
 2.block scope variable-- {}isko block kehte h but var {} ki respect nahi karta kyuki woh function scoped h isliye woh pure code mein use ho jayega but agar hum let use karenge toh woh
@@ -97,3 +98,21 @@ but error aata h ki cannot access a before intialization rather declaration matl
 
 */
 
+                   //const imp concept//
+const user = {
+    name: "Arpit"
+};
+
+user.name = "Rahul";
+
+console.log(user.name);
+
+// here we didnt reassign value 
+user = anotherObject; // ❌
+would be reassigning user.
+
+user.name = "Rahul"; // ✅
+
+doesn't replace user. It changes the content/property of the existing object. That's called mutation.
+
+const → variable reassignment ❌, object contents mutation ✅
